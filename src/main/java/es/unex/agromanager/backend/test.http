@@ -1,8 +1,0 @@
-### Fichar entrada
-POST http://localhost:8080/api/sesiones/entrada?usuario=juan
-
-### Fichar salida
-POST http://localhost:8080/api/sesiones/salida?usuario=juan
-
-### Minutos trabajados hoy
-GET  http://localhost:8080/api/sesiones/hoy?usuario=juan
