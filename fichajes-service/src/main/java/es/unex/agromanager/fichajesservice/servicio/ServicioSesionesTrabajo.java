@@ -1,4 +1,3 @@
-// fichajes-service/src/main/java/.../servicio/ServicioSesionesTrabajo.java
 package es.unex.agromanager.fichajesservice.servicio;
 
 import es.unex.agromanager.fichajesservice.dominio.SesionTrabajo;

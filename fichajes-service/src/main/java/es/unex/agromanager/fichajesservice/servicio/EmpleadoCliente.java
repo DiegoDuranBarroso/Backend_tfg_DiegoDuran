@@ -1,12 +1,11 @@
-// fichajes-service/src/main/java/.../servicio/EmpleadoCliente.java
 package es.unex.agromanager.fichajesservice.servicio;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestClient;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.ResourceAccessException;
+import org.springframework.web.client.RestClient;
 
 @Component
 public class EmpleadoCliente {
@@ -17,7 +16,7 @@ public class EmpleadoCliente {
         this.rest = RestClient.builder().baseUrl(baseUrl).build();
     }
 
-    /** Valida que el empleado existe en empleados-service usando el mismo JWT del usuario. */
+    /** Lanza IllegalArgumentException si no existe; IllegalStateException si auth falló o no disponible. */
     public void validarExiste(String usuario, String bearerToken) {
         try {
             rest.get()
