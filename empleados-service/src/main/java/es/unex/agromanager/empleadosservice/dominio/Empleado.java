@@ -16,9 +16,14 @@ public class Empleado {
     private String nombreCompleto;
 
     // Getters/setters
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Long getId() { return id; }
     public String getUsuario() { return usuario; }
     public void setUsuario(String usuario) { this.usuario = usuario; }
     public String getNombreCompleto() { return nombreCompleto; }
     public void setNombreCompleto(String nombreCompleto) { this.nombreCompleto = nombreCompleto; }
+
+
 }

@@ -26,6 +26,9 @@ public class SesionTrabajo {
     private Integer minutosTrabajados = 0;
 
     // Getters/setters
+    public void setId(long l) {
+        this.id=l;
+    }
     public Long getId() { return id; }
     public String getEmpleadoUsuario() { return empleadoUsuario; }
     public void setEmpleadoUsuario(String empleadoUsuario) { this.empleadoUsuario = empleadoUsuario; }
@@ -35,4 +38,6 @@ public class SesionTrabajo {
     public void setSalida(LocalDateTime salida) { this.salida = salida; }
     public Integer getMinutosTrabajados() { return minutosTrabajados; }
     public void setMinutosTrabajados(Integer minutosTrabajados) { this.minutosTrabajados = minutosTrabajados; }
+
+
 }

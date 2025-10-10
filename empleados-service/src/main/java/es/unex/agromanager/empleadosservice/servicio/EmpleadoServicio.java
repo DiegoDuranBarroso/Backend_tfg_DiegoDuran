@@ -18,4 +18,6 @@ public class EmpleadoServicio {
         return repo.findByUsuario(usuario)
                 .orElseThrow(() -> new IllegalArgumentException("Empleado no encontrado"));
     }
+
+
 }
